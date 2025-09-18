@@ -8,9 +8,10 @@ function Home() {
       <div className="flex gap-4">
         
           <Link to="/fetch" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Fetch User Directory</Link>
-       
 
           <Link to="/axios" className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Axios User Directory</Link>
+          
+            <Link to="/UserReg" className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600">Residents Registration</Link>
       </div>
     </div>
   );

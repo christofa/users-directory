@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import js from "@eslint/js";
 
 function AxiosPage() {
   const [users, setUsers] = useState([]);
@@ -10,6 +11,13 @@ function AxiosPage() {
       .get("https://jsonplaceholder.typicode.com/users")
       .then((res) => setUsers(res.data))
       .catch((error) => console.error("Error fetching users:", error));
+  }, []);
+
+  useEffect(() => {
+    axios.post('https://reqres.in/api/users', {
+        "name": "Christopher",
+        "job": "Developer"
+    }).then((res) => console.log(res))
   }, []);
 
   console.log(users);
