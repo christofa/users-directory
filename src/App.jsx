@@ -13,7 +13,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/fetch" element={<FetchPage />} />
       <Route path="/axios" element={<AxiosPage />} />
-      <Route patth="/UserReg" element={<UserReg />} />
+      <Route path="/userReg" element={<UserReg />} />
     </Routes>
   )
 }
